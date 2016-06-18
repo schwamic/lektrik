@@ -90,7 +90,11 @@ Sprache sprechen. Ebenfalls muss man das OSC-Protokoll verstehen lernen, **/prin
 
 
 *Wissenswertes:*
-
+* The software utility Cron is a time-based job scheduler in Unix-like computer operating systems
+* Richtig herunterfahren: sudo shutdown -h now /// aber auch kill und restart des programms
+* 15 Useful Commands Every Raspberry Pi User Should Know: http://www.makeuseof.com/tag/15-useful-commands-every-raspberry-pi-user-should-know/
+* Für Tests: while True: time.sleep(1) und print '%s and %s' %(a,b)
+* Terminal: http://www.linux-fuer-blinde.de/91-0-dateien-aufspueren-mit-find.html 
 
 *RASPI:*
 * http://www.raspberrypi-spy.co.uk/2015/02/how-to-autorun-a-python-script-on-raspberry-pi-boot/
