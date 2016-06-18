@@ -1,0 +1,125 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\Users\yeah\Desktop\2016_LektrikHalloWerner_2\VVVV\patch\SEND.v4p" systemname="SEND" filename="C:\Users\schwamic\Desktop\Lektrik\2016_LektrikHalloWerner\VVVV\patch\SEND.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="18240" top="630" width="7455" height="7335">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3420" top="2760" width="1665" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3420" top="2760" width="1950" height="450">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|tells when we have to send the new compositions&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="885" top="4845" width="2370" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="885" top="4845" width="2370" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|sends the message via OSC/UDP|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="765" top="465" width="780" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="765" top="465" width="1020" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|SEND LOGIC|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3465" top="1035" width="1485" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3465" top="1035" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="string">
+   </PIN>
+   </NODE>
+   <NODE systemname="SEND_CONTROL" filename="subpatch\SEND_CONTROL.v4p" nodename="C:\Users\schwamic\Desktop\Lektrik\2016_LektrikHalloWerner\VVVV\patch\subpatch\SEND_CONTROL.v4p" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="3435" top="3240" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="frameloop" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="new value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Do Send" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="3870" top="1515" width="10845" height="7485">
+   </BOUNDS>
+   <PIN pinname="String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SEND_UDP" filename="subpatch\SEND_UDP.v4p" nodename="C:\Users\schwamic\Desktop\Lektrik\2016_LektrikHalloWerner\VVVV\patch\subpatch\SEND_UDP.v4p" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="960" top="5220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="send" visible="1">
+   </PIN>
+   <PIN pinname="OSC Encoder Arguments" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="-255" top="900" width="14955" height="9810">
+   </BOUNDS>
+   <PIN pinname="clearall" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Do Send" dstnodeid="16" dstpinname="send" linkstyle="Bezier">
+   <LINKPOINT x="3435" y="4350">
+   </LINKPOINT>
+   <LINKPOINT x="1545" y="4350">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="16" dstpinname="OSC Encoder Arguments" linkstyle="Bezier">
+   <LINKPOINT x="3465" y="3248">
+   </LINKPOINT>
+   <LINKPOINT x="1005" y="3248">
+   </LINKPOINT>
+   </LINK>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="19">
+   <BOUNDS type="Node" left="2025" top="765" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2025" top="765" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="clearall">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="16" dstpinname="clearall">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="15" dstpinname="String">
+   </LINK>
+   </PATCH>
