@@ -56,11 +56,11 @@ Hierfür gibt es viele Lösungen. Für dieses Projekt wurde Cron verwendet und f
 
 _Edit:_
 _Es ist wichtig, wenn man sein Skript testen mˆchte, dass man es erst in der "Front" kl‰rt. Also ganz normal
-das Terminal ˆffnen und in das Verzeichnis navigieren und mit "python meinScript.py" das Script testen.
+das Terminal ˆffnen und in das Verzeichnis navigieren und mit **python meinScript.py** das Script testen.
 Das hat den Vorteil, dass die ganzen prints, ect.pp. geloggt werden, was wir ja wollen beim Testen._
 
-_Ebenfalls sollte man das eine Script nicht multibel betreiben. Mit ps aux | grep /../meinSkript.py holen wir uns
-alle Prozesse die das Skript betreffen. Mit dem Befehl "kill pid_to_kill" kann man den jeweiligen Vorgang beenden._
+_Ebenfalls sollte man das eine Script nicht multibel betreiben. Mit 'ps aux | grep /../meinSkript.py' holen wir uns
+alle Prozesse die das Skript betreffen. Mit dem Befehl 'kill pid_to_kill' kann man den jeweiligen Vorgang beenden._
 
 
 
@@ -77,16 +77,16 @@ Für Ausgaben von Background-Prozessen schreiben wir alles in ein Log-File und k
 `file.close()`
 
 
-Der Code ist im Loop und wird immer ausgef¸hrt, wenn neue Daten verarbeitet werden. Hierbei muss bei Linux
-der Ordern vorhanden sein, wohin das Verzeichnis gespeichert wird, das Textfile wird beim ersten Lauf erzeug, 
-wenn es noch nicht vorhanden ist. JOIN verkn¸pft zwei Pfade und returnt den kompletten Pfad. ABSPATH ist der 
-Absolute Pfad und startet vom Wurzelverzeichnis. RELPATH ist der relative Pfad und geht vom aktuellen Heimverzeichnis aus.
+Der Code ist im Loop und wird immer ausgeführt, wenn neue Daten verarbeitet werden. Hierbei muss bei Linux
+der Ordern vorhanden sein, wohin das Verzeichnis gespeichert wird, das Textfile wird beim ersten Lauf erzeugt, 
+wenn es noch nicht vorhanden ist. **JOIN** verknüpft zwei Pfade und returnt den kompletten Pfad. **ABSPATH** ist der 
+Absolute Pfad und startet vom Wurzelverzeichnis. **RELPATH** ist der relative Pfad und geht vom aktuellen Heimverzeichnis aus.
 
 
 
 ####5. Probleme und Lösungsansätze:
-Die groﬂen Probleme sind die Schnittstellen. Hier m¸ssen oft Typen ge‰ndert werden damit beide Programme die selbe
-Sprache sprechen. Ebenfalls muss man das OSC-Protokoll verstehen lernen, **/print** am Anfang des Strings sendet das Signal für den richtigen ActionHandler (in unserem Fall). So ist der erste Schritt, die Schnittstellen zum Lauften zu bringen und das gewählte Bertragungsprotokoll zu verstehen. Das gelingt am besten mit kleinen DummySkripts in der Testphase. Bei Fehlermeldungen ist oft auch ein Blick in die Bibliothek bei GitHub super, denn meistens ist auch hier einfach nur der Tpy des vergebenen Parameters falsch oder fehlt.  
+Die größten Probleme sind die Schnittstellen. Hier müssen oft Typen geändert werden damit beide Programme die selbe
+Sprache sprechen. Ebenfalls muss man das OSC-Protokoll verstehen lernen, **/print** am Anfang des Strings sendet das Signal für den richtigen ActionHandler (in unserem Fall). So ist der erste Schritt, die Schnittstellen zum Lauften zu bringen und das gewählte Übertragungsprotokoll zu verstehen. Das gelingt am besten mit kleinen DummySkripts in der Testphase. Bei Fehlermeldungen ist oft auch ein Blick in die Bibliothek bei GitHub super, denn meistens ist auch hier einfach nur der Tpy des vergebenen Parameters falsch oder fehlt.  
 
 
 *Wissenswertes:*
