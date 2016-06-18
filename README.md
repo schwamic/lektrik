@@ -55,12 +55,12 @@ Hierfür gibt es viele Lösungen. Für dieses Projekt wurde Cron verwendet und f
 *http://www.raspberrypi-spy.co.uk/2013/07/running-a-python-script-at-boot-using-cron/*
 
 _Edit:_
-_Es ist wichtig, wenn man sein Skript testen mˆchte, dass man es erst in der "Front" kl‰rt. Also ganz normal
-das Terminal ˆffnen und in das Verzeichnis navigieren und mit **python meinScript.py** das Script testen.
-Das hat den Vorteil, dass die ganzen prints, ect.pp. geloggt werden, was wir ja wollen beim Testen._
+_Es ist wichtig, wenn man sein Skript testen möchte, dass man es erst in der "Front" klärt. Also ganz normal
+das Terminal öffnen und in das Verzeichnis navigieren und mit `python meinScript.py` das Script ausführen.
+Das hat den Vorteil, dass die ganzen *prints*, ect.pp. geloggt werden, was wir ja wollen beim Testen._
 
-_Ebenfalls sollte man das eine Script nicht multibel betreiben. Mit 'ps aux | grep /../meinSkript.py' holen wir uns
-alle Prozesse die das Skript betreffen. Mit dem Befehl 'kill pid_to_kill' kann man den jeweiligen Vorgang beenden._
+_Ebenfalls sollte man das eine Script nicht multibel betreiben. Mit `ps aux | grep /../meinSkript.py` holen wir uns
+alle Prozesse die das Skript betreffen. Mit dem Befehl `kill pid_to_kill` kann man den jeweiligen Vorgang beenden._
 
 
 
