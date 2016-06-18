@@ -91,12 +91,15 @@ Sprache sprechen. Ebenfalls muss man das OSC-Protokoll verstehen lernen, **/prin
 
 *Wissenswertes:*
 
-*1. The software utility Cron is a time-based job scheduler in Unix-like computer operating systems*
 
-*2. Richtig herunterfahren: sudo shutdown -h now /// aber auch kill und restart des programms*
+*RASPI:*
+* http://www.raspberrypi-spy.co.uk/2015/02/how-to-autorun-a-python-script-on-raspberry-pi-boot/
+* https://www.raspberrypi.org/documentation/linux/usage/cron.md
+* http://www.raspberrypi-spy.co.uk/2013/07/running-a-python-script-at-boot-using-cron/
+* http://pi.bek.no/accessTerminalBoot/
 
-*3. 15 Useful Commands Every Raspberry Pi User Should Know:*
-*http://www.makeuseof.com/tag/15-useful-commands-every-raspberry-pi-user-should-know/*
-
-*4. Für Tests: while True: time.sleep(1) und print '%s and %s' %(a,b)*
-*5. Terminal: http://www.linux-fuer-blinde.de/91-0-dateien-aufspueren-mit-find.html*
+*VVVV-OSC:*
+* http://hexler.net/touchosc
+* http://hexler.net/docs/touchosc-setup-other
+* https://vvvv.org/documentation/westtricks#keep-clean-structure-in-patches
+* Literatur: Interaktives Skizzieren mit VVVV
