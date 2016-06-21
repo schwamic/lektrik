@@ -1,4 +1,7 @@
 # LEKTRIK
+
+105 Glühbirnen und ein MidiController. Die Installation wird zur Musikvisualisierung verwendet und soll für Interaktionen mit dem VJ/Dj offen sein. 
+
 ###Gliederung
 1. RasperryPi an den Start bringen 
 2. Python-Skript schreiben
