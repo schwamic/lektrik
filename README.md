@@ -89,7 +89,7 @@ Absolute Pfad und startet vom Wurzelverzeichnis. **RELPATH** ist der relative Pf
 
 ####5. Probleme und Lösungsansätze:
 Die größten Probleme sind die Schnittstellen. Hier müssen oft Typen geändert werden damit beide Programme die selbe
-Sprache sprechen. Ebenfalls muss man das OSC-Protokoll verstehen lernen, **/print** am Anfang des Strings sendet das Signal für den richtigen ActionHandler (in unserem Fall). So ist der erste Schritt, die Schnittstellen zum Lauften zu bringen und das gewählte Übertragungsprotokoll zu verstehen. Das gelingt am besten mit kleinen DummySkripts in der Testphase. Bei Fehlermeldungen ist oft auch ein Blick in die Bibliothek bei GitHub super, denn meistens ist auch hier einfach nur der Tpy des vergebenen Parameters falsch oder fehlt.  
+Sprache sprechen. Ebenfalls muss man das OSC-Protokoll verstehen lernen, **/print** am Anfang des Strings sendet das Signal für den richtigen ActionHandler (in unserem Fall). So ist der erste Schritt, die Schnittstellen zum Lauften zu bringen und das gewählte Übertragungsprotokoll zu verstehen. Das gelingt am besten mit kleinen DummySkripts in der Testphase. Bei Fehlermeldungen ist oft auch ein Blick in die Bibliothek bei GitHub super, denn meistens ist auch hier einfach nur der Typ des vergebenen Parameters falsch oder fehlt.  
 
 _________________________________________________________________________________
 *Wissenswertes:*
