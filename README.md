@@ -1,4 +1,7 @@
 # LEKTRIK
 
-105 Glühbirnen und ein MidiController. Die Installation wird zur Musikvisualisierung verwendet und soll für Interaktionen mit dem VJ/Dj offen sein. (http://michaelschwarz.digital/portfolio/lektrik/)
+This is a light-installation consisting of 105 light bulbs with one midi-controller for a director. The installation was made for music-visualization and was designed with vvvv.
+
+(http://michaelschwarz.digital/portfolio/lektrik/)
+
 
