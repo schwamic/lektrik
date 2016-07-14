@@ -1,5 +1,7 @@
 # LEKTRIK
 
-105 Glühbirnen und ein MidiController. Die Installation wird zur Musikvisualisierung verwendet und soll für Interaktionen mit dem VJ offen sein. (http://michaelschwarz.digital/portfolio/lektrik/)
+Das ist eine Lichtinstallation mit 105 Glühbirnen und einem MidiController als Dirigent. Die Installation dient zur Musikvisualisierung und wurde mit VVVV umgesetzt.
+
+(http://michaelschwarz.digital/portfolio/lektrik/)
 
 
