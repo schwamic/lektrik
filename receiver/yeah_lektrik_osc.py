@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-""" receiving OSC with pyOSC
-https://trac.v2.nl/wiki/pyOSC
-example by www.ixi-audio.net based on pyOSC documentation
+""" 
+lektrik 
+by michael schwarz
 
-this is a very basic example, for detailed info on pyOSC functionality check the OSC.py file 
-or run pydoc pyOSC.py. you can also get the docs by opening a python shell and doing
+you need a driver for USB-SERIAL RS485
+check your ip-adress (windows -> terminal -> ipconfig -> ipadress)
 """
 
 import OSC
