@@ -27,8 +27,9 @@ print serial.tools.list_ports.comports()
 
 # open first serial port
 ser = serial.Serial() #Make sure you connect to the right serial_connection.
-ser.port = '/dev/ttyUSB0'        #Make sure you connect to the right serial port. "0" is probably the wrong one.
+ser.port = 'COM3'        #Make sure you connect to the right serial port. "0" is probably the wrong one.
 ser.baudrate = 9600
+print ser.baudrate
 ser.open() #Open the serial connection
 print ser.isOpen()
 print ser.name
@@ -38,7 +39,7 @@ print ser.name
 
 
 # tupple with ip, port. i dont use the () but maybe you want -> send_address = ('127.0.0.1', 9000)
-receive_address = ('0.0.0.0', 9000)
+receive_address = ('0.0.0.0', 9600)
 
 # OSC Server. there are three different types of server.
 s = OSC.OSCServer(receive_address)  # basic
@@ -50,29 +51,29 @@ s.addDefaultHandlers()
 
 # define a message-handler function for the server to call.
 def action_handler(addr, tags, stuff, source):
-    print "---"
-    print "received new osc msg from %s" % OSC.getUrlStr(source)
-    print "with addr : %s" % addr
-    print "typetags %s" % tags
-    print "data %s" % stuff
-    print "old values %s" %old_lamp_values
+    #print "---"
+    #print "received new osc msg from %s" % OSC.getUrlStr(source)
+    #print "with addr : %s" % addr
+    #print "typetags %s" % tags
+    #print "data %s" % stuff
+    #print "old values %s" %old_lamp_values
 
     send_serial(stuff)
 
-    print "---"
+    #print "---"
 
 # get the values from osc and send them as serials
 def send_serial(osc_list):
     global lamp_values
 
     if isinstance(osc_list[0], str):
-        print "sweet message."
+        #print "sweet message."
         lamp_values = list(osc_list[0])
-        print "WERTE: %s" % lamp_values
+        #print "WERTE: %s" % lamp_values
         send(lamp_values)
 
     elif isinstance(osc_list[0], int):
-        print "sweet number."
+        #print "sweet number."
         #encode to binary string
         lamp_values = list(str(bin(osc_list[0]))[2:])
         send(lamp_values)
@@ -96,15 +97,15 @@ def send(lamp_values):
         for value in lamp_values:
             index = isLamp(index)
             if value != old_lamp_values[counter]:
-                print '---'
-                print '255'
-                print index
-                print value
-                print '---'
+                #print '---'
+                #print '255'
+                #print index
+                #print value
+                #print '---'
 
-                ser_write(255)
-                ser_write(int(index))
-                ser_write(int(value))
+                ser.write(struct.pack('!B',int(255)))
+                ser.write(struct.pack('!B',int(index)))
+                ser.write(struct.pack('!B',int(value)))
 
             index = index + 1
             counter = counter +1
@@ -114,15 +115,15 @@ def send(lamp_values):
         index = 1
         for value in clear_values:
             index = isLamp(index)
-            print '---'
-            print '255'
-            print index
-            print value
-            print '---'
+            #print '---'
+            #print '255'
+            #print index
+            #print value
+            #print '---'
 
-            ser_write(255)
-            ser_write(int(index))
-            ser_write(int(value))
+            ser.write(struct.pack('!B',int(255)))
+            ser.write(struct.pack('!B',int(index)))
+            ser.write(struct.pack('!B',int(value)))
 
             index = index + 1
         old_lamp_values = clear_values
