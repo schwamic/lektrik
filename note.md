@@ -1,5 +1,5 @@
 
-###Gliederung\
+###Gliederung
 1. RasperryPi an den Start bringen
 2. Python-Skript schreiben
 3. Daemon auf dem RasPi einrichten
@@ -43,7 +43,6 @@ Als Empfänger muss das RasPi den binaryInt wieder decoden: `lamp_values = list(
 Damit Python Serial senden kann, muss man mit: `struct.pack('>B', n)`.
 Der OSC-Server muss auf *0.0.0.0* stehen oder man gibt eine feste Adresse an, der Port muss über das
 Terminal gesucht werden, siehe Code im Skript.
-
 *CTRL+C quit the python job in the terminal*
 
 
@@ -89,7 +88,7 @@ Sprache sprechen. Ebenfalls muss man das OSC-Protokoll verstehen lernen, **/prin
 
 WICHTIG: VVVV MUSS IM LEKTRIKORDNER, DAMIT DIE VERKNÜPFUNG GEWÄHRLEISTET IST.
 _________________________________________________________________________________
-*Wissenswertes:*\
+*Wissenswertes:*
 * The software utility Cron is a time-based job scheduler in Unix-like computer operating systems
 * Richtig herunterfahren: sudo shutdown -h now /// aber auch kill und restart des programms
 * 15 Useful Commands Every Raspberry Pi User Should Know: http://www.makeuseof.com/tag/15-useful-commands-every-raspberry-pi-user-should-know/
@@ -107,4 +106,3 @@ ________________________________________________________________________________
 * http://hexler.net/docs/touchosc-setup-other
 * https://vvvv.org/documentation/westtricks#keep-clean-structure-in-patches
 * Literatur: Interaktives Skizzieren mit VVVV
-}
