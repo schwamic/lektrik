@@ -83,10 +83,10 @@ Sprache sprechen. Ebenfalls muss man das OSC-Protokoll verstehen lernen, **/prin
 
 
 ####6. Installationshilfe
-- Python27 + Pip + pyserial + pyOSC
+- Python27 + pip + pyserial + pyOSC (pip ist ab den neueren Version schon installiert)
 - VVVV + addonpack
 
-WICHTIG: VVVV MUSS IM LEKTRIKORDNER, DAMIT DIE VERKNÜPFUNG GEWÄHRLEISTET IST.
+WICHTIG: VVVV MUSS IM LEKTRIKORDNER SEIN, DAMIT DIE VERKNÜPFUNG GEWÄHRLEISTET IST.
 _________________________________________________________________________________
 *Wissenswertes:*
 * The software utility Cron is a time-based job scheduler in Unix-like computer operating systems
