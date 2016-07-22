@@ -14,6 +14,7 @@
 3. Daemon auf dem RasPi einrichten\
 4. Logfile erstellen\
 5. Probleme\
+6. Installationshinweise\
 \
 \
 \
@@ -97,6 +98,12 @@ Absolute Pfad und startet vom Wurzelverzeichnis. **RELPATH** ist der relative Pf
 Die gr\'f6\'dften Probleme sind die Schnittstellen. Hier m\'fcssen oft Typen ge\'e4ndert werden damit beide Programme die selbe\
 Sprache sprechen. Ebenfalls muss man das OSC-Protokoll verstehen lernen, **/print** am Anfang des Strings sendet das Signal f\'fcr den richtigen ActionHandler (in unserem Fall). So ist der erste Schritt, die Schnittstellen zum Lauften zu bringen und das gew\'e4hlte \'dcbertragungsprotokoll zu verstehen. Das gelingt am besten mit kleinen DummySkripts in der Testphase. Bei Fehlermeldungen ist oft auch ein Blick in die Bibliothek bei GitHub super, denn meistens ist auch hier einfach nur der Typ des vergebenen Parameters falsch oder fehlt.  \
 \
+\
+####6. Installationshilfe\
+- Python27 + Pip + pyserial + pyOSC\
+- VVVV + addonpack\
+\
+WICHTIG: VVVV MUSS IM LEKTRIKORDNER, DAMIT DIE VERKN\'dcPFUNG GEW\'c4HRLEISTET IST.\
 _________________________________________________________________________________\
 *Wissenswertes:*\
 * The software utility Cron is a time-based job scheduler in Unix-like computer operating systems\
